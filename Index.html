@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="teste.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2BR Livros</title>
+  <link rel="icon" href="Logotipos/p12.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="Index.html">
+      <img src="Imagens/logo_A2BR.jpeg" alt="CompreLivro Logo" width="150">
+    </a>
+    <div class="collapse navbar-collapse">
+      <form class="d-flex">
+        <input class="form-control me-2" style="width:600px" type="search" placeholder="Buscar livros" aria-label="Search">
+        <a class="btn btn__busca" href="Pesquisa.html">Buscar</a>
+      </form>
+    </div>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="Imagens/menuHamburguer.jpg" alt="Menu Hamburguer" style="width:50px;height:50px">
+    </button>
+    <div class="navbar-toggler" style="width:100%">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar livros" aria-label="Search">
+        <a class="btn btn__busca" href="Pesquisa.html">Buscar</a>
+        </form>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+         <a class="nav-link" href="Cadastro.html">Cadastro<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Carrinho.html">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-danger">3</span>
+          </a>
+       </li>
+      </ul>
+   </div>
+  </nav>
+
+ <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a  href="Pesquisa.html">
+        <img src="Imagens/jogosvorazes.png" class="d-block w-100" alt="First slide">
+      </a>  
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Jogos Vorazes</h5>        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a  href="Pesquisa.html">
+        <img src="Imagens/HarryPotter.jpg" class="d-block w-100" alt="Second slide">
+      </a>  
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Harry Potter</h5>        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a  href="Pesquisa.html">
+        <img src="Imagens/Senhordosaneis.jpg" class="d-block w-100" alt="Third slide">
+      </a>  
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Senhor dos Anéis</h5>        
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+ <!-- Main Content -->
+<main class="container mt-4">
+  <div class="row">
+    <!-- Sidebar -->
+<!-- Sidebar -->
+<div class="col-lg-3 mb-4">
+  <div class="d-lg-block d-none">
+    <div class="list-group">
+      <a href="" class="list-group-item__a active">Categorias</a>
+      <a href="Pesquisa.html" class="list-group-item">Ficção</a>
+      <a href="Pesquisa.html" class="list-group-item">Não Ficção</a>
+      <a href="Pesquisa.html" class="list-group-item">Infantil</a>
+      <a href="Pesquisa.html" class="list-group-item">Romance</a>
+      <a href="Pesquisa.html" class="list-group-item">Terror</a>
+      <a href="Pesquisa.html" class="list-group-item">Ação e Aventura</a>
+    </div>
+  </div>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="Imagens/menuHamburguer.jpg" alt="Menu Hamburguer" style="width:50px;height:50px">
+  </button>  
+  <div class="collapse" id="sidebarCollapse">
+    <div class="list-group">
+      <a href="" class="list-group-item__a active">Categorias</a>
+      <a href="Pesquisa.html" class="list-group-item">Ficção</a>
+      <a href="Pesquisa.html" class="list-group-item">Não Ficção</a>
+      <a href="Pesquisa.html" class="list-group-item">Infantil</a>
+      <a href="Pesquisa.html" class="list-group-item">Romance</a>
+      <a href="Pesquisa.html" class="list-group-item">Terror</a>
+      <a href="Pesquisa.html" class="list-group-item">Ação e Aventura</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- End Sidebar -->
+
+
+    <!-- Product List -->
+    <div class="col-lg-9">
+      <!-- Sort Options -->
+      <div class="row mb-4"> 
+        <div class="col-md-6">
+          <select class="form-select">
+            <option selected>Ordenar por</option>
+            <option value="1">Ordem alfabética (A-Z)</option>
+            <option value="2">Ordem alfabética (Z-A)</option>
+            <option value="3">Mais comprados</option>
+            <option value="4">Menos comprados</option>
+          </select>
+        </div>        
+      </div>
+      <!-- End Sort Options -->
+
+      <!-- Product Cards -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Product Card Example -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/calicedefogo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cálice de Fogo</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/camarasecreta.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camara Secreta</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/DoisIrmaos.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dois Irmãos</h5>
+              <p class="card-text">Milton Hatoum</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/Eassimqueacaba.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">É assim que acaba</h5>
+              <p class="card-text">Coolen Hoover</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/latimempo.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Brasil uma Biografia</h5>
+              <p class="card-text">Lilia e Heloisa</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/MALALA.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Malala</h5>
+              <p class="card-text">Malala</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/Oquesobra.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">O que sobra</h5>
+              <p class="card-text">Principe Harry</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/pedrafilosofal.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pedra filosofal</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/retornodorei.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Retorno do Rei</h5>
+              <p class="card-text">J. R. R. Tolkien</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/senhordosaneisasduastorres.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Duas Torres</h5>
+              <p class="card-text">J. R. R. Tolkien</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/senhordosaneisasociedadedoanel.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sociedade do Anel</h5>
+              <p class="card-text">J. R. R. Tolkien</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/tudoerio.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tudo é Rio</h5>
+              <p class="card-text">Carla Madeira</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/prisioneirodeaskaban.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Prisioneiro de Askaban</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/ordemdafenix.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ordem da Fenix</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/enigmadoprincipe.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Enigma do Príncipe</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/reliquiasdamorte.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Reliquias da morte</h5>
+              <p class="card-text">J K Rowling</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/cantigadospassarosedasserpentes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cantiga dos Passaros e das Serpentes</h5>
+              <p class="card-text">Suzanne Collins</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/jogosvorazes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jogos Vorazes</h5>
+              <p class="card-text">Suzanne Collins</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/emchamas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Em Chamas</h5>
+              <p class="card-text">Suzanne Collins</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+	<div class="col">
+          <div class="card h-100">
+            <img src="Imagens/Produtos/esperanca.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Esperança</h5>
+              <p class="card-text">Suzanne Collins</p>
+              <p class="card-text"><small class="text-muted">R$ 44,90</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="Detalhe.html" class="btn btn__produto">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Product Card Example -->
+        
+        <!-- Repeat the product card example for each book in the store -->
+
+      </div>
+      <!-- End Product Cards -->
+    </div>
+    <!-- End Product List -->
+  </div>
+</main>
+<!-- End Main Content -->
+
+<footer class="footer text-white pt-5 pb-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-12">
+        <h5 class="text-uppercase mb-3">A2BR Livros</h5>
+        <p>A2BR Livros é uma loja online de livros. Acesse nossa plataforma e encontre os melhores títulos para o seu entretenimento e aprendizado.</p>
+      </div>
+      <div class="col-md-3 col-12">
+        <h5 class="footer__subtitulo text-uppercase mb-3">Links úteis</h5>
+        <ul class="footer__list list-unstyled">
+          <li><a class="footer__list__a" href="#">Sobre nós</a></li>
+          <li><a class="footer__list__a" href="#">Política de privacidade</a></li>
+          <li><a class="footer__list__a" href="#">Termos de uso</a></li>
+          <li><a class="footer__list__a" href="#">Fale conosco</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-12">
+        <h5 class="text-uppercase mb-3">Siga-nos</h5>
+        <ul class="list-unstyled">
+          <li><a class="footer__list__a" href="#">Facebook</a></li>
+          <li><a class="footer__list__a" href="#">Instagram</a></li>
+          <li><a class="footer__list__a" href="#">Twitter</a></li>
+          <li><a class="footer__list__a" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-12">
+        <h5 class="text-uppercase mb-3">Contato</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-envelope mr-2"></i>A2BR@gmail.com</li>
+          <li><i class="fas fa-phone mr-2"></i>(11) 1234-5678</li>
+          <li><i class="fas fa-map-marker-alt mr-2"></i>São Paulo, Brasil</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid__2 bg-light pt-2 pb-2">
+    <div class="container-fluid__2__row">
+      <div class="container-fluid__2__col col-md-6 col-12">
+        <p class="container-fluid__2__text-muted mb-md-0 mb-3">©2023 A2BR. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>18:38 05/04/2023
+</body>
+</html>
+
